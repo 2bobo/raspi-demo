@@ -1,0 +1,12 @@
+[Unit]
+Description = cube-pi demo
+After=local-fs.target
+ConditionPathExists=/usr/local/sbin/raspi-demo/cube-pi
+
+[Service]
+ExecStart=/usr/local/sbin/raspi-demo/cube-pi/cube-pi.sh
+Restart=no
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
