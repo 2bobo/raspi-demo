@@ -1,0 +1,12 @@
+[Unit]
+Description = Inky-Impression demo
+After=syslog.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/sbin/raspi-demo/Inky-Impression/create_image.py
+Restart=no
+Type=simple
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
