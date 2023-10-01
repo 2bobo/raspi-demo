@@ -3,10 +3,11 @@ Description = Inky-Impression demo
 After=syslog.target
 
 [Service]
-ExecStart=/usr/bin/python3 /usr/local/sbin/raspi-demo/Inky-Impression/create_image.py
+ExecStart=/bin/sh /usr/local/sbin/raspi-demo/Inky-Impression/Inky-demo.sh
 Restart=no
-Type=simple
+Type=forking
 StandardOutput=null
+ExecStartPre=/bin/sleep 30
 
 [Install]
 WantedBy=multi-user.target
