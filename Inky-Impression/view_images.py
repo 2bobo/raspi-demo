@@ -21,7 +21,6 @@ BUTTONS = [5, 6, 16, 24]
 LABELS = ['A', 'B', 'C', 'D']
 
 image_dir = "/var/raspi_create_pict/image"
-_image_file_path = "/usr/local/sbin/raspi-demo/Inky-Impression/sample.png"
 
 
 def view_image(image_file):

@@ -37,17 +37,13 @@ RasPi4 8GBモデル必須。
 
 7. 自動起動準備  
     ```
-    sudo cp -Rp /usr/local/sbin/raspi-demo/Inky-Impression/Inky-demo.service /etc/systemd/system/.
-    sudo chown root:root /etc/systemd/system/Inky-demo.service
-    sudo chmod 644 /etc/systemd/system/Inky-demo.service
+    sudo cp -Rp /usr/local/sbin/raspi-demo/Inky-Impression/create_image.service /etc/systemd/system/.
+    sudo chown root:root /etc/systemd/system/create_image.service
+    sudo chmod 644 /etc/systemd/system/create_image.service
     ```
 
 8. 自動起動設定  
     ```
     sudo systemctl daemon-reload
-    sudo systemctl enable --now Inky-demo.service
+    sudo systemctl enable --now create_image.service
     ```
-9. 確認
-   ```
-   
-   ```
